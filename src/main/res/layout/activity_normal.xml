@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="0dp"
+    android:background="@android:color/holo_blue_bright"
+    android:gravity="center_horizontal"
+    android:label="normal_activity_label"
+    android:paddingBottom="30dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="30dp"
+    tools:context="com.example.android.tictacgame.NormalActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/button29"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="45dp"
+        android:background="@android:color/holo_blue_bright"
+        android:gravity="center_vertical|center_horizontal">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_bright">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:background="@android:color/holo_blue_dark"
+                android:onClick="makeMove"
+                android:soundEffectsEnabled="false"
+                android:text=""
+                android:textColorLink="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:background="@android:color/holo_blue_dark"
+                android:onClick="makeMove"
+                android:text=""
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/background_dark"
+                android:textColorLink="@android:color/background_dark" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:background="@android:color/holo_blue_dark"
+                android:fadingEdge="horizontal|vertical"
+                android:onClick="makeMove"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_bright">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:background="@android:color/holo_blue_dark"
+                android:onClick="makeMove"
+                android:text="" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="makeMove"
+                android:background="@android:color/holo_blue_dark"
+                android:text="" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:background="@android:color/holo_blue_dark"
+                android:onClick="makeMove"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_bright">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:background="@android:color/holo_blue_dark"
+                android:onClick="makeMove"
+                android:text="" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/holo_blue_dark"
+                android:onClick="makeMove"
+                android:text="" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:background="@android:color/holo_blue_dark"
+                android:onClick="makeMove"
+                android:text="" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button29"
+        android:layout_alignLeft="@+id/tableLayout1"
+        android:layout_alignStart="@+id/tableLayout1"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="reset"
+        android:text="reset" />
+
+    <TextView
+        android:id="@+id/moveTextView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:clickable="false"
+        android:gravity="center_horizontal"
+        android:text="x_move"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/background_dark"
+        android:textSize="50sp"
+        android:layout_above="@+id/tableLayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button29"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button10"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button10"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="switch1"
+        android:layout_marginTop="10dp"
+        android:text="5x5 Board View" />
+
+
+</RelativeLayout>
